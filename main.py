@@ -19,7 +19,7 @@ def main():
         # initialize class NewsFeed with arguments from people.xlsx
         feed = NewsFeed(theme=row['interest'], date=yesterday, language='en', how_many=5)
         # e-mail, that message come from
-        email = yagmail.SMTP(user='pythoncourse04@gmail.com', password='qwrn mpqa atzn itdn')
+        email = yagmail.SMTP(user='pythoncourse04@gmail.com', password='')
         # send e-mail to contacts from xlsx
         email.send(to=row['email'],
                    subject=f'Your news from {row["interest"]}',
